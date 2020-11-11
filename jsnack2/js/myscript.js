@@ -15,9 +15,18 @@ var arrayObj = [
   {name: 'Jenny', type: 'borsa', color: 'pink'},
 ];
 
-var arrayCopia = arrayObj;
+console.log(arrayObj);
 
 
+
+// creo una copia dell'array
+var arrayCopia = [];
+
+for (var i = 0; i < arrayObj.length; i++) {
+  arrayCopia.push(arrayObj[i]);
+}
+
+// pusho la nuova proprietà sul secondo array
 for (var i = 0; i < arrayCopia.length; i++) {
   var position = randomLetter(1);
   arrayCopia[i].position = position;
